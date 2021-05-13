@@ -78,14 +78,15 @@ def move_func(s, t):
     dy2dt = v_y2
     dv_y2dt = 0
     return dx1dt, dv_x1dt, dy1dt, dv_y1dt, dx2dt, dv_x2dt, dy2dt, dv_y2dt
-T=10
+T=100
 X = []
 Y = []
 X1 = -7.5
 X2 = 7.5
 Y1 = -7.5
 Y2 = 7.5
-N=1000
+N=3000
+g=9.8
 tau=np.linspace(0,T,N)
 x10,y10=0,0
 x20,y20=5,6
